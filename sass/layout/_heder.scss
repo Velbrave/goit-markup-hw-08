@@ -1,0 +1,127 @@
+.heder-fone {
+  padding-top: 26px;
+  padding-bottom: 21px;
+  border: 1px solid var(--second-border-color);
+}
+
+.heder-fone-container {
+  display: flex;
+  align-items: center;
+}
+
+.page-navigation {
+  display: flex;
+  align-items: center;
+  column-gap: 106px;
+}
+
+.navigation {
+  position: relative;
+  display: flex;
+  column-gap: 50px;
+
+  & .navigation__studio_curent {
+    color: var(--accent-color);
+  }
+
+  & .navigation__studio_curent::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    top: 46px;
+    left: -2px;
+    background-color: var(--accent-color);
+  }
+
+  & .navigation__portfolio_curent {
+    color: var(--accent-color);
+  }
+
+  & .navigation__portfolio_curent::after {
+    display: block;
+    content: "";
+    width: 78px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    top: 46px;
+    left: 93px;
+    background-color: var(--accent-color);
+  }
+}
+
+.navigation-link {
+  display: flex;
+  margin-left: auto;
+  column-gap: 50px;
+}
+
+.heder-fone {
+  background-color: var(--primary-white-color);
+}
+
+.logo {
+  color: var(--accent-color);
+  font-family: Raleway, sans-serif;
+  @include font(700, 26px, 31px);
+  text-decoration: none;
+}
+
+.logo span {
+  color: var(--first-logo-color);
+}
+
+.navigation a {
+  color: var(--primary-text-color);
+  @include font(500, 14px, 16px);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color var(--transition-duration);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.navigation-link__item {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.navigation-link__mail {
+  fill: var(--title-text-color);
+  transition: fill var(--transition-duration), color var(--transition-duration);
+
+  .navigation-link__item:hover &,
+  .navigation-link__item:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.navigation-link__tel {
+  fill: var(--title-text-color);
+  transition: fill var(--transition-duration), color var(--transition-duration);
+
+  .navigation-link__item:hover &,
+  .navigation-link__item:focus & {
+    fill: var(--accent-color);
+  }
+}
+
+.navigation-link a {
+  color: var(--title-text-color);
+  @include font(500, 14px, 16px);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  transition: color var(--transition-duration);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
