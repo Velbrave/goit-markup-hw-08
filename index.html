@@ -17,8 +17,8 @@
 
     <!-- Шапка сайту -->
 
-    <!-- <header class="heder-fone">
-      <div class="container heder-fone-container">
+    <header class="heder-fone">
+      <div class="container heder-fone__container">
         <nav class="page-navigation">
           <a href="./index.html" class="logo">Web<span>Studio</span></a>
           <ul class="navigation list">
@@ -27,6 +27,11 @@
             <li class="navigation__menu"><a href="">Контакти</a></li>
           </ul>
         </nav>
+        <button type="button" class="heder-fone-btn" data-menu-open>
+          <svg class="heder-fone-btn__menu" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="navigation-link list">
           <li class="navigation-link__icon">
             <a href="mailto:info@devstudio.com" class="navigation-link__item">
@@ -46,8 +51,40 @@
           </li>
         </ul>
       </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-navigation list link">
+            <li class="mobile-navigation__menu"><a href="" class="mobile-navigation__studio-curent">Студія</a></li>
+            <li class="mobile-navigation__menu"><a href="./portfolio.html">Портфоліо</a></li>
+            <li class="mobile-navigation__menu"><a href="">Контакти</a></li>
+          </ul>
+          <ul class="mobile-navigation-link list link">
+            <li class="mobile-navigation-link__item">
+              <a href="tel:+380961111111" class="mobile-navigation-link__item-tel">
+                +38 (096) 111 11 11
+              </a>
+            </li>
+            <li class="mobile-navigation-link__item">
+              <a href="mailto:info@devstudio.com" class="mobile-navigation-link__item-email">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="social-list list">
+            <li class="social-list__link"><a href=""></a>Instagram</li>
+            <li class="social-list__link"><a href=""></a>Twitter</li>
+            <li class="social-list__link"><a href=""></a>Facebook</li>
+            <li class="social-list__link"><a href=""></a>LinkedIn</li>
+          </ul>
+        </div>
+      </div>
     </header>
-    <main> -->
+    <main>
 
     <!-- Герой -->
 
@@ -60,7 +97,7 @@
 
     <!-- Особливості -->
 
-      <section class="section-description">
+      <!-- <section class="section-description">
         <div class="container section-description-container">
           <h2 class="section-description__title visually-hidden">Особливості</h2>
           <ul class="description-list list">
@@ -93,7 +130,7 @@
             <h3 class="description-desc__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
             <p class="description-desc__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </ul>
-          <!-- <ul class="description-desc list">
+          <ul class="description-desc list">
                 <li class="description-desc__item"> 
                     <h3 class="description-desc__title">УВАГА ДО ДЕТАЛЕЙ</h3>
                     <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -110,9 +147,9 @@
                     <h3 class="description-desc__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
                     <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
                 </li>
-          </ul> -->
+          </ul>
         </div>
-      </section>
+      </section> -->
 
     <!-- Профіль -->
 
@@ -490,5 +527,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>
