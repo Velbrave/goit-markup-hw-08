@@ -97,69 +97,91 @@
 
     <!-- Особливості -->
 
-      <!-- <section class="section-description">
+      <section class="section-description">
         <div class="container section-description-container">
           <h2 class="section-description__title visually-hidden">Особливості</h2>
           <ul class="description-list list">
             <li class="description-list__item">
-              <svg class="description-list__icon">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
+              <div class="description-desc-pic">
+                <svg class="description-list__icon">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <div class="description-desc">
+                <h3 class="description-desc__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+                <p class="description-desc__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+              </div>
             </li>
-            <h3 class="description-desc__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-            <p class="description-desc__text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+            
             <li class="description-list__item">
-              <svg class="description-list__icon">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
+              <div class="description-desc-pic">
+                <svg class="description-list__icon">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <div class="description-desc">
+                <h3 class="description-desc__title">ПУНКТУАЛЬНІСТЬ</h3>
+                <p class="description-desc__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+              </div>
             </li>
-            <h3 class="description-desc__title">ПУНКТУАЛЬНІСТЬ</h3>
-            <p class="description-desc__text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+           
             <li class="description-list__item">
-              <svg class="description-list__icon">
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
+              <div class="description-desc-pic">
+                <svg class="description-list__icon">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <div class="description-desc">
+                <h3 class="description-desc__title">ПЛАНУВАННЯ</h3>
+                <p class="description-desc__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+              </div>
             </li>
-            <h3 class="description-desc__title">ПЛАНУВАННЯ</h3>
-            <p class="description-desc__text">Так само консультація з широким активом значною мірою зумовлює.</p>
+           
             <li class="description-list__item">
-              <svg class="description-list__icon">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
+              <div class="description-desc-pic">
+                <svg class="description-list__icon">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <div class="description-desc">
+                <h3 class="description-desc__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+                <p class="description-desc__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+              </div>
             </li>
-            <h3 class="description-desc__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-            <p class="description-desc__text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-          </ul>
-          <ul class="description-desc list">
-                <li class="description-desc__item"> 
-                    <h3 class="description-desc__title">УВАГА ДО ДЕТАЛЕЙ</h3>
-                    <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
-                </li>
-                <li class="description-desc__item">
-                    <h3 class="description-desc__title">ПУНКТУАЛЬНІСТЬ</h3>
-                    <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
-                </li>
-                <li class="description-desc__item">
-                    <h3 class="description-desc__title">ПЛАНУВАННЯ</h3>
-                    <p>Так само консультація з широким активом значною мірою зумовлює.</p>
-                </li>
-                <li class="description-desc__item">
-                    <h3 class="description-desc__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
-                    <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
-                </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
     <!-- Профіль -->
 
-      <!-- <section class="section-profile">
+      <section class="section-profile">
         <div class="container section-profile-container">
           <h2 class="section-profile__title">Чим ми займаємося</h2>
           <ul class="list-box list">
-            <li class="list-box__item"><img src="./images/box1.jpg" alt="Розробка сайтів" width="370" height="294"></li>
-            <li class="list-box__item"><img src="./images/box2.jpg" alt="Розробка мобільних додатків" width="370" height="294"></li>
-            <li class="list-box__item"><img src="./images/box3.jpg" alt="Дизайнерські рішення" width="370" height="294"></li>
+            <li class="list-box__item">
+              <picture>
+                <source srcset="./images/box/box-img-1.jpg 1x,
+                ./images/box/box-img-1@2x.jpg 2x"
+                 media="(min-width: 1200px)"/>
+                <img src="./images/box/box-img-1.jpg" alt="Розробка сайтів"/>
+              </picture>
+            </li>
+            <li class="list-box__item">
+              <picture>
+                <source srcset="./images/box/box-img-2.jpg 1x,
+                ./images/box/box-img-2@2x.jpg 2x"
+                 media="(min-width: 1200px)"/>
+                <img src="./images/box/box-img-2.jpg" alt="Розробка мобільних додатків"/>
+              </picture>
+            </li>
+            <li class="list-box__item">
+              <picture>
+                <source srcset="./images/box/box-img-3.jpg 1x,
+                ./images/box/box-img-3@2x.jpg 2x"
+                 media="(min-width: 1200px)"/>
+                <img src="./images/box/box-img-3.jpg" alt="Дизайнерські рішення"/>
+              </picture>
+            </li>
           </ul>
           <ul class="list-box-title list">
             <li class="list-box-title__list" width="370">
@@ -173,16 +195,27 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
     <!-- Працівники -->
-<!-- 
+
       <section class="section-working">
         <div class="container section-working-container">
           <h2 class="section-working__title">Наша команда</h2>
           <ul class="page-working list">
             <li class="page-working__item">
-              <img src="./images/img1.jpg" alt="Продукт дизайнер" width="270" height="260">
+              <picture>
+                <source srcset="./images/working/desktop-img-1.jpg 1x,
+                ./images/working/desktop-img-1@2x.jpg 2x"
+                 media="(min-width: 1200px)"/>
+                <source srcset="./images/working/tablet-img-1.jpg 1x,
+                ./images/working/tablet-img-1@2x.jpg 2x"
+                media="(min-width: 768px"/>
+                <source srcset="./images/working/mobile-img-1.jpg 1x,
+                ./images/working/mobile-img-1@2x.jpg 2x"
+                media="(max-width: 767px)"/>
+                <img src="./images/working/desktop-img-1.jpg" alt="Продукт дизайнер"/>
+              </picture>
               <div class="page-working__border">
                 <h3 class="page-working__name">Ігор Дем'яненко</h3>
                 <p class="page-working__about">Product Designer</p>
@@ -219,7 +252,18 @@
               </div>
             </li>
             <li class="page-working__item">
-              <img src="./images/img2.jpg" alt="Фронтенд розробник" width="270" height="260">
+              <picture>
+                <source srcset="./images/working/desktop-img-2.jpg 1x,
+                              ./images/working/desktop-img-2@2x.jpg 2x" 
+                              media="(min-width: 1200px)" />
+                <source srcset="./images/working/tablet-img-2.jpg 1x,
+                              ./images/working/tablet-img-2@2x.jpg 2x" 
+                              media="(min-width: 768px" />
+                <source srcset="./images/working/mobile-img-2.jpg 1x,
+                              ./images/working/mobile-img-2@2x.jpg 2x" 
+                              media="(max-width: 767px)" />
+                <img src="./images/working/desktop-img-2.jpg" alt="Фронтенд розробник" />
+              </picture>
               <div class="page-working__border">
                 <h3 class="page-working__name">Ольга Рєпіна</h3>
                 <p class="page-working__about">Frontend Developer</p>
@@ -256,7 +300,18 @@
               </div>
             </li>
             <li class="page-working__item">
-              <img src="./images/img3.jpg" alt="Маркетинг" width="270" height="260">
+              <picture>
+                <source srcset="./images/working/desktop-img-3.jpg 1x,
+                              ./images/working/desktop-img-3@2x.jpg 2x" 
+                              media="(min-width: 1200px)" />
+                <source srcset="./images/working/tablet-img-3.jpg 1x,
+                              ./images/working/tablet-img-3@2x.jpg 2x" 
+                              media="(min-width: 768px" />
+                <source srcset="./images/working/mobile-img-3.jpg 1x,
+                              ./images/working/mobile-img-3@2x.jpg 2x" 
+                              media="(max-width: 767px)" />
+                <img src="./images/working/desktop-img-3.jpg" alt="Маркетинг" />
+              </picture>
               <div class="page-working__border">
                 <h3 class="page-working__name">Микола Тарасов</h3>
                 <p class="page-working__about">Marketing</p>
@@ -293,7 +348,18 @@
               </div>
             </li>
             <li class="page-working__item">
-              <img src="./images/img4.jpg" alt="Юел дизайнер" width="270" height="260">
+              <picture>
+                <source srcset="./images/working/desktop-img-4.jpg 1x,
+                              ./images/working/desktop-img-4@2x.jpg 2x" 
+                              media="(min-width: 1200px)" />
+                <source srcset="./images/working/tablet-img-4.jpg 1x,
+                              ./images/working/tablet-img-4@2x.jpg 2x" 
+                              media="(min-width: 768px" />
+                <source srcset="./images/working/mobile-img-4.jpg 1x,
+                              ./images/working/mobile-img-4@2x.jpg 2x" 
+                              media="(max-width: 767px)" />
+                <img src="./images/working/desktop-img-4.jpg" alt="Юел дизайнер" />
+              </picture>
               <div class="page-working__border">
                 <h3 class="page-working__name">Михайло Єрмаков</h3>
                 <p class="page-working__about">UI Designer</p>
@@ -331,11 +397,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постійні клієнти -->
 
-      <!-- <section class="section-clients">
+      <section class="section-clients">
         <div class="container section-clients-container">
           <h2 class="section-clients__title">Постійні клієнти</h2>
           <ul class="page-clients list">
@@ -384,11 +450,11 @@
           </ul>
         </div>
       </section>
-    </main> -->
+    </main>
 
     <!-- Footer -->
 
-    <!-- <footer class="page-footer">
+    <footer class="page-footer">
       <div class="container page-footer-container">
         <div class="logo-desc-item">
           <a href="./index.html" class="logo-desc">Web<span>Studio</span></a>
@@ -453,10 +519,10 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
     <!-- backdrop -->
-<!-- 
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
         <button type="button" class="modal-close-btn" data-modal-close>
@@ -526,7 +592,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

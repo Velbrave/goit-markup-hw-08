@@ -3,21 +3,19 @@
 }
 
 .page-footer-container {
-  display: flex;
-  column-gap: 70px;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 16px;
 }
 
 .logo-desc {
   display: block;
   margin-bottom: 20px;
   color: var(--accent-color);
-  font-family: "Raleway";
-  @include font(700, 26px, 31px);
+  font-family: 'Raleway';
+  @include font(700, 24px, 28px);
   font-style: normal;
   text-decoration: none;
+  text-align: center;
 }
 
 .logo-desc span {
@@ -26,8 +24,12 @@
 }
 
 .aside-address-list {
+  text-align: center;
+}
+
+.aside-address-list {
   & .aside-address-list__map a {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     color: var(--primary-white-color);
     font-style: normal;
     text-decoration: none;
@@ -35,7 +37,7 @@
   }
 
   & .aside-address-list__link a {
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     color: var(--primary-addres-color);
     font-style: normal;
     text-decoration: none;
@@ -54,11 +56,10 @@
 }
 
 .footer-container__title {
-  display: flex;
-  padding-top: 12px;
+  padding-top: 52px;
   padding-bottom: 20px;
-  width: 206px;
   @include font(700, 14px, 16px);
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-white-color);
@@ -66,11 +67,9 @@
 
 .list-footer {
   display: flex;
+  justify-content: center;
   column-gap: 10px;
-}
-
-.list-footer__item {
-  display: flex;
+  margin-bottom: 60px;
 }
 
 .list-footer__link {
@@ -82,8 +81,7 @@
   border-radius: 50%;
   fill: var(--primary-white-color);
   background-color: rgba(255, 255, 255, 0.1);
-  transition: fill var(--transition-duration),
-    background-color var(--transition-duration);
+  transition: fill var(--transition-duration), background-color var(--transition-duration);
 
   &:hover,
   &:focus {
@@ -93,23 +91,20 @@
 }
 
 .container-form__title {
-  padding-top: 12px;
   padding-bottom: 20px;
   @include font(700, 14px, 16px);
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--primary-white-color);
-}
-
-.footer-form__field {
-  display: flex;
 }
 
 .footer-form__input {
   padding-left: 10px;
   padding-right: 10px;
-  width: 358px;
+  width: 450px;
   height: 50px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -126,7 +121,8 @@
 
 .footer-form__btn {
   min-width: 200px;
-  margin-left: 12px;
+  height: 50px;
+  margin: 0 auto;
   padding: 10px 28px;
   border: none;
   @include font(700, 16px, 30px);
@@ -139,4 +135,99 @@
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 165px;
+  }
+
+  .logo-desc {
+    text-align: left;
+    margin-left: 115px;
+  }
+
+  .aside-address-list {
+    width: 232px;
+    margin-left: 76px;
+  }
+
+  .footer-container__title {
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
+
+  .container-form {
+    margin-left: 166px;
+  }
+
+  .container-form__title {
+    padding-top: 37px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-desc {
+    margin-left: 0;
+  }
+  .aside-address-list {
+    margin-left: 0%;
+  }
+
+  .aside-address-list__map {
+    text-align: left;
+  }
+  .aside-address-list__link {
+    text-align: left;
+  }
+
+  .page-footer-container {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 70px;
+  }
+  .container-form {
+    margin-left: 23px;
+  }
+
+  .container-form__title {
+    padding-top: 12px;
+    text-align: left;
+  }
+
+  .footer-container__title {
+    padding-top: 12px;
+    padding-bottom: 20px;
+    text-align: left;
+  }
+
+  .footer-form__field {
+    display: flex;
+    column-gap: 12px;
+  }
+  .footer-form__input {
+    width: 358px;
+    margin-bottom: 0;
+  }
+
+  .list-footer {
+    margin-bottom: 0;
+  }
+
+  .aside-address-list {
+    & .aside-address-list__map a {
+      padding-bottom: 9px;
+    }
+
+    & .aside-address-list__link a {
+      padding-bottom: 9px;
+    }
+
+     
+    & .aside-address-list__link:last-child a {
+      padding-bottom: 0;
+    }
+  }
 }

@@ -24,9 +24,9 @@
   fill: var(--primary-text-color);
 
   .modal-form__input:focus + & {
-      fill: var(--accent-color);
-      border-color: var(--accent-color);
-    }
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-form__input {
@@ -38,12 +38,11 @@
   transition: fill var(--transition-duration), border-color var(--transition-duration);
 
   &:focus {
-      outline: none;
-      fill: var(--accent-color);
-      border-color: var(--accent-color);
-    }
+    outline: none;
+    fill: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
-
 
 .modal-form__message {
   width: 100%;
@@ -55,9 +54,9 @@
   transition: border-color var(--transition-duration);
 
   &:focus {
-      outline: none;
-      border-color: var(--accent-color);
-    }
+    outline: none;
+    border-color: var(--accent-color);
+  }
 
   &::placeholder {
     @include font(400, 12px, 14px);
@@ -74,10 +73,10 @@
   transition: background-color var(--accent-color), border-color var(--accent-color);
 
   .modal-form__checkbox:checked + & {
-      background-color: var(--accent-color);
-      border-color: var(--accent-color);
-    }
-  
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+
   .modal-form__checkbox:focus + & {
     outline: 2px solid var(--primary-btn-color);
   }
@@ -87,6 +86,8 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  @include font(400, 12px, 14px);
+  letter-spacing: 0.01em;
 }
 
 .modal-form__own-check {
@@ -120,3 +121,9 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-form__check {
+    @include font(400, 14px, 24px);
+    letter-spacing: 0.03em;
+  }
+}

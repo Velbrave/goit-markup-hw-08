@@ -1,3 +1,9 @@
+@media screen and (max-width: 1199px) {
+  .section-profile-container {
+    display: none;
+  }
+}
+
 .section-profile {
   background-color: var(--primary-white-color);
 }
@@ -28,15 +34,12 @@
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
-
-
 .list-box-title {
   position: absolute;
   bottom: 94px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
-
 }
 
 .list-box-title__list {
@@ -44,7 +47,6 @@
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
   flex-basis: calc((100% - 2 * 30px) / 3);
-
 }
 
 .list-box-title__text {
