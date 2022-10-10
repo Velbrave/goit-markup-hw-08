@@ -36,6 +36,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
   background-color: var(--primary-white-color);
+  border-bottom: 1px solid var(--second-border-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -72,6 +73,22 @@
       position: absolute;
       top: 48px;
       left: -2px;
+      background-color: var(--accent-color);
+    }
+
+    & .navigation__portfolio_curent {
+      color: var(--accent-color);
+    }
+
+    & .navigation__portfolio_curent::after {
+      display: block;
+      content: '';
+      width: 78px;
+      height: 4px;
+      border-radius: 2px;
+      position: absolute;
+      top: 46px;
+      left: 93px;
       background-color: var(--accent-color);
     }
   }
@@ -190,8 +207,6 @@
   }
 }
 
-
-
 //   & .navigation__portfolio_curent {
 //     color: var(--accent-color);
 //   }
@@ -208,5 +223,3 @@
 //     background-color: var(--accent-color);
 //   }
 // }
-
-
