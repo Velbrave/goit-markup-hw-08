@@ -607,12 +607,12 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/dextop-img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img.jpg");
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/dextop-img@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img@2x.jpg");
   }
 }
 .hero-container {
@@ -620,12 +620,6 @@ body {
   padding-bottom: 118px;
 }
 
-@media screen and (min-width: 1200px) {
-  .hero-container {
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-}
 .hero__title {
   max-width: 360px;
   margin-left: auto;
@@ -640,14 +634,6 @@ body {
   color: var(--primary-white-color);
 }
 
-@media screen and (min-width: 1200px) {
-  .hero__title {
-    max-width: 696px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.3636363636;
-  }
-}
 .hero__button {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -671,6 +657,16 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+  .hero__title {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
   .hero__button {
     min-width: 216px;
   }
